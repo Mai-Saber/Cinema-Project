@@ -1,0 +1,44 @@
+.movies {
+  width: 100%;
+  height: fit-content !important;
+  padding:15px;
+  padding-bottom: 40px;
+  
+  background-image: url(../../../public/images/backGround.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.movies .card-div {
+  border: 1px solid rgba(149, 0, 255, 0.242);
+  justify-content: space-between;
+  margin-bottom: 50px;
+  
+}
+.movies .card-div .card {
+  background-color: rgba(149, 0, 255, 0.242);
+  height: 300px;
+}
+.movies .card-div img {
+  width: 100%;
+  height: 60%;
+}
+.movies .card-div .card .content {
+  padding: 5px 10px;
+}
+.movies .card-div .card button {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.modal-title h1 {
+  color: rgb(148, 33, 180);
+  font-weight: bold;
+}
+.modal-container b{
+  color: rgb(148, 33, 180);
+}
+/* /////// */
+@media (min-width:100px) and (max-width:1200px) {
+ 
+}

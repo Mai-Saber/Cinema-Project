@@ -1,0 +1,19 @@
+.error-div {
+  text-align: center;
+}
+.error-div h1 {
+  color: red;
+  font-size: 60px;
+  font-style: italic;
+  margin-bottom: -5px;
+  margin-top: -10px;
+}
+.error-div .icon{
+    position: relative;
+    top: 10px;
+}
+.error-div img {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+}

@@ -1,0 +1,64 @@
+.mainDivForLoginScreen {
+  background-size: 100% 100%;
+  background-image: url(../../../public/images/backGround.jpg);
+
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  padding-top: 2%;
+}
+.mainDivForLoginScreen .login-content {
+  border: 1px dashed rgb(176, 16, 16);
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.mainDivForLoginScreen .login-content .login-title {
+  color: rgb(102, 0, 255);
+  font-style: italic;
+}
+
+/*//////////////////*/
+.mainDivForLoginScreen .form-box {
+  margin: auto;
+  border: 0.1rem solid #bd912f;
+  border-radius: 0.4rem;
+  width: 30%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.mainDivForLoginScreen .form-box form {
+  margin: 2rem 0;
+}
+.mainDivForLoginScreen .form-box form .form-inputs {
+  margin-bottom: 1rem;
+}
+.mainDivForLoginScreen .form-box form .form-inputs input {
+  width: 100%;
+  margin: 0.15rem 0;
+  height: 3rem;
+  border-radius: 0.2rem;
+  border: none;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+/*/ ///////////////////////////////*/
+.mainDivForLoginScreen .form-box .button {
+  color: white;
+  background-image: linear-gradient(to right, #bd902e, #e0c35b);
+  border: 0px solid transparent;
+  border-radius: 10px;
+  width: 8.5rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* ///// */
+@media (min-width: 100px) and (max-width: 1200px) {
+  .mainDivForLoginScreen .form-box .button {
+    width: 5rem;
+  }
+}

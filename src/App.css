@@ -1,0 +1,39 @@
+/* scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #6c757d;
+  background-color: #6c757d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #495158;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #343a40;
+}
+
+/*/////////////////////////*/
+.parent-flex .main {
+  width: 90vw;
+  height: 100vh !important;
+  position: relative;
+  overflow-y: auto;
+}
+.parent-flex .layout {
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+/* //// */
+.note {
+  color: red;
+}
+/* ///// */
