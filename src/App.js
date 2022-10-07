@@ -27,11 +27,11 @@ function App() {
             <SideNav />
             <main className="main" id="main">
               <Routes>
-                <Route element={<ProtectedRoute />}>
-                  <Route path="/movies" element={<Movies />} />
-                  <Route path="/moviesList" element={<MoviesList />} />
-                  <Route path="*" element={<NotFound />} />
-                </Route>
+                {/* <Route element={<ProtectedRoute />}> */}
+                <Route path="/movies" element={<Movies />} />
+                <Route path="/moviesList" element={<MoviesList />} />
+                <Route path="*" element={<NotFound />} />
+                {/* </Route> */}
               </Routes>
             </main>
           </div>
