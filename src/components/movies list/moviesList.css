@@ -6,6 +6,11 @@
   padding-bottom: 100px;
   padding: 10px;
 }
+.moviesList .header{
+  padding-left: 20px;
+  font-style: italic;
+  color: rgb(183, 158, 16);
+}
 /*/////////////////////////////*/
 .moviesList .table-div {
   padding: 0.625rem;

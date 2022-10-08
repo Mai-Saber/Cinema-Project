@@ -30,7 +30,7 @@
   color: rgb(243, 237, 237);
   text-decoration: none;
 }
-.fixedNav ul li a:hover {
+.fixedNav ul .logout:hover {
   text-decoration: underline;
   color: blueviolet;
   font-weight: bold;
@@ -44,7 +44,7 @@
   margin-right: 10px !important;
 }
 /* ////////// */
-@media (min-width:100px) and (max-width:1200px) {
+@media (min-width: 100px) and (max-width: 1200px) {
   .fixedNav .App-logo {
     height: 10vh;
   }

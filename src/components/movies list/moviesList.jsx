@@ -73,7 +73,7 @@ function MoviesList() {
       </Row>
       {/* /////////////////////////////////////// */}
       <div className="moviesList">
-        <h1>there are {(allMovies || []).length} movies here </h1>
+        <h1 className="header">There are {(allMovies || []).length} movies here </h1>
         <div className="table-div">
           <table>
             <thead>

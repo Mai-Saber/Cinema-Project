@@ -31,11 +31,11 @@ function FixedNav(props) {
 
           <li id="date"> Today : {getTodayDate()}</li>
 
-          <li>
+          <li className="logout">
             <span>
               <i className="ri-logout-box-line"></i>
             </span>
-            <Link to="/login" onClick={() => handleLogout()}>
+            <Link className="logout" to="/login" onClick={() => handleLogout()}>
               Logout
             </Link>
           </li>

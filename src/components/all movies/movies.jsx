@@ -16,8 +16,10 @@ function Movies(props) {
   useEffect(() => {
     async function GetMovies() {
       const res = await handleGetAllMovies();
-      setAllMovies(res);
-      console.log("res", res);
+      const arr = res.filter((ele) => ele.id !== 744276);
+      setAllMovies(arr);
+      console.log(arr);
+      // console.log("res", res);
     }
     GetMovies();
   }, []);
@@ -40,17 +42,11 @@ function Movies(props) {
   return (
     <div className="movies">
       <Row>
-        <h4 className="note">
-          Note:I put this cat,but the api image's code is there and works
-          correctly ( but i commented it)
-        </h4>
         {(allMovies || []).map((movie) => (
-          <Col xs={6} lg={3} key={movie.id}>
+          <Col xs={6} lg={4} key={movie.id}>
             <div className="card-div" key={movie.id}>
               <Card
-                // NOTE:the next code isn't wrong,but i didn't like these api pictures, so i put cat's img instead of them
-                // imgSrc={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}
-                imgSrc="../../../images/cat.png"
+                imgSrc={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}
                 movieName={movie.title}
                 onClick={() =>
                   handleShow({
