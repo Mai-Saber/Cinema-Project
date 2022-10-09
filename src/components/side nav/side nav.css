@@ -1,9 +1,10 @@
 .sideNav {
-  width: 10vw;
+  width: 15vw;
   background-color: #252525;
   font-size: 20px;
   height: 90vh;
   padding-top: 3rem;
+  margin-top: -10px;
 }
 
 .sideNav ul {
@@ -46,8 +47,10 @@
   background-color: #bf920a;
   left: 0px;
 }
+
 /* /// */
 @media (min-width: 100px) and (max-width: 1200px) {
+ 
   .sideNav ul li a {
     padding: 0 5px;
   }

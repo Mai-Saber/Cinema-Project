@@ -22,7 +22,7 @@
 
 /*/////////////////////////*/
 .parent-flex .main {
-  width: 90vw;
+  width: 100vw;
   height: 100vh !important;
   position: relative;
   overflow-y: auto;
@@ -37,3 +37,6 @@
   color: red;
 }
 /* ///// */
+.disable {
+  display: none !important;
+}

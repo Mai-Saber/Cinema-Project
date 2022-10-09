@@ -9,26 +9,23 @@
   height: 10vh;
 }
 /*//////////////*/
-.fixedNav ul {
-  display: flex !important;
-  flex-flow: row;
-  list-style: none;
-  margin: 0;
-  align-items: center;
-  padding: 0;
+.menu {
+  display: none;
+  font-size: 28px;
 }
-
+.fixedNav .App-logo {
+  margin-top: -20px;
+  height: 10vh;
+  width: 20%;
+  border-radius: 50%;
+}
 .fixedNav ul li {
-  width: calc(100% / 3);
-  display: flex;
-  flex-flow: row;
+  margin-top: 20px;
   list-style: none;
-  margin-right: 10px;
-  align-items: center;
 }
 .fixedNav ul li a {
-  color: rgb(243, 237, 237);
   text-decoration: none;
+  color: white;
 }
 .fixedNav ul .logout:hover {
   text-decoration: underline;
@@ -37,15 +34,16 @@
   font-size: 20px;
 }
 
-.fixedNav .App-logo {
-  height: 13vh;
-  width: 100%;
-  border-radius: 50%;
-  margin-right: 10px !important;
-}
 /* ////////// */
 @media (min-width: 100px) and (max-width: 1200px) {
+  .fixedNav {
+    height: 20vh;
+  }
   .fixedNav .App-logo {
     height: 10vh;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
   }
 }

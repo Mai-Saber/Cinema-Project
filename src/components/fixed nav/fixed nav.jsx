@@ -11,7 +11,7 @@ function FixedNav(props) {
   }
 
   const handleLogout = () => {
-    console.log("logout", sessionStorage.getItem("email"))
+    console.log("logout", sessionStorage.getItem("email"));
     sessionStorage.clear();
   };
 
@@ -19,26 +19,37 @@ function FixedNav(props) {
     <>
       <div className="fixedNav">
         <ul>
-          <li>
-            <Link to="/home">
-              <img
-                className="App-logo"
-                src="../../../images/simple.jpg"
-                alt="logo"
-              />
-            </Link>
-          </li>
-
-          <li id="date"> Today : {getTodayDate()}</li>
-
-          <li className="logout">
-            <span>
-              <i className="ri-logout-box-line"></i>
-            </span>
-            <Link className="logout" to="/login" onClick={() => handleLogout()}>
-              Logout
-            </Link>
-          </li>
+          <div className="row">
+            <li className="col-md-6 col-lg-4 col-6  ">
+              <Link to="/home">
+                <img
+                  className="App-logo"
+                  src="../../../images/simple.jpg"
+                  alt="logo"
+                />
+              </Link>
+            </li>
+            <li className="col-md-6 col-lg-4 col-6 " id="date">
+              Today : {getTodayDate()}
+            </li>
+            <li className="col-md-6 col-lg-4 col-6  logout">
+              <span>
+                <i className="ri-logout-box-line"></i>
+              </span>
+              <Link
+                className="logout"
+                to="/login"
+                onClick={() => handleLogout()}
+              >
+                Logout
+              </Link>
+            </li>
+            <li className=" col-6">
+              <span className="menu" onClick={props.handleSideNav}>
+                <i className="ri-menu-line menu-icon"></i>
+              </span>
+            </li>
+          </div>
         </ul>
       </div>
     </>

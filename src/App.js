@@ -1,10 +1,14 @@
 import React, { UseContext, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import "./App.css";
-import ProtectedRoute from "./common/protected route";
 
 import FixedNav from "./components/fixed nav/fixed nav.jsx";
 import SideNav from "./components/side nav/side nav.jsx";
@@ -14,6 +18,13 @@ import Movies from "./components/all movies/movies";
 import Form from "./components/form/form";
 
 function App() {
+  const handleSideNav = () => {
+    if (window.innerWidth) {
+      
+      document.getElementById("side").classList.toggle("disable");
+    }
+  };
+
   return (
     <React.Fragment>
       <ToastContainer />
@@ -22,16 +33,15 @@ function App() {
           <Routes>
             <Route path="/login" element={<Form />} />
           </Routes>
-          <FixedNav />
+          <FixedNav handleSideNav={() => handleSideNav()} />
           <div className="layout">
-            <SideNav />
+            <SideNav id="side" handleSideNav={() => handleSideNav()} />
             <main className="main" id="main">
               <Routes>
-                {/* <Route element={<ProtectedRoute />}> */}
-                <Route path="/" element={<Movies />} />
+                <Route path="/movies" element={<Movies />} />
+                <Route path="/" element={<Navigate to="/movies" />} />
                 <Route path="/moviesList" element={<MoviesList />} />
                 <Route path="*" element={<NotFound />} />
-                {/* </Route> */}
               </Routes>
             </main>
           </div>

@@ -17,7 +17,6 @@ function MoviesList() {
     async function GetMovies() {
       const res = await services.handleGetAllMovies();
       setAllMovies(res);
-      console.log("res", res);
     }
     GetMovies();
   }, []);
@@ -73,7 +72,9 @@ function MoviesList() {
       </Row>
       {/* /////////////////////////////////////// */}
       <div className="moviesList">
-        <h1 className="header">There are {(allMovies || []).length} movies here </h1>
+        <h1 className="header">
+          There are {(allMovies || []).length} movies here{" "}
+        </h1>
         <div className="table-div">
           <table>
             <thead>

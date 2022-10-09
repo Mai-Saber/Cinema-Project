@@ -5,13 +5,17 @@ import "./side nav.css";
 
 function SideNav(props) {
   return (
-    <nav className="sideNav">
+    <nav className="sideNav" id={props.id}>
       <ul>
         <li>
-          <NavLink to="/movies">All Movies</NavLink>
+          <NavLink to="/movies" onClick={props.handleSideNav}>
+            All Movies
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/moviesList">Movies List</NavLink>
+          <NavLink to="/moviesList" onClick={props.handleSideNav}>
+            Movies List
+          </NavLink>
         </li>
       </ul>
     </nav>
