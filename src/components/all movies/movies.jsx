@@ -16,10 +16,9 @@ function Movies(props) {
   useEffect(() => {
     async function GetMovies() {
       const res = await handleGetAllMovies();
+      // the next line because id="744276" is a bad image
       const arr = res.filter((ele) => ele.id !== 744276);
       setAllMovies(arr);
-      console.log(arr);
-      // console.log("res", res);
     }
     GetMovies();
   }, []);
@@ -28,7 +27,6 @@ function Movies(props) {
 
   const handleShow = ({ name, language, date, overview, popularity }) => {
     setShowModal(true);
-
     const data = {
       name: name,
       language: language,

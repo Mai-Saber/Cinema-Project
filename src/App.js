@@ -19,8 +19,8 @@ import Form from "./components/form/form";
 
 function App() {
   const handleSideNav = () => {
-    if (window.innerWidth) {
-      
+    if (window.innerWidth < 1200) {
+      console.log(window.innerWidth);
       document.getElementById("side").classList.toggle("disable");
     }
   };
@@ -33,9 +33,9 @@ function App() {
           <Routes>
             <Route path="/login" element={<Form />} />
           </Routes>
-          <FixedNav handleSideNav={() => handleSideNav()} />
+          <FixedNav handleSideNav={handleSideNav} />
           <div className="layout">
-            <SideNav id="side" handleSideNav={() => handleSideNav()} />
+            <SideNav id="side" handleSideNav={handleSideNav} />
             <main className="main" id="main">
               <Routes>
                 <Route path="/movies" element={<Movies />} />

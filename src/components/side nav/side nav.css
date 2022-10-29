@@ -50,7 +50,9 @@
 
 /* /// */
 @media (min-width: 100px) and (max-width: 1200px) {
- 
+  .sideNav {
+    display: none;
+  }
   .sideNav ul li a {
     padding: 0 5px;
   }

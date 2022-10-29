@@ -11,7 +11,6 @@
 /*//////////////*/
 .menu {
   display: none;
-  font-size: 28px;
 }
 .fixedNav .App-logo {
   margin-top: -20px;
@@ -27,11 +26,22 @@
   text-decoration: none;
   color: white;
 }
+.logoutIcon {
+  position: relative;
+  top: 2px;
+  right: 4px;
+}
+
 .fixedNav ul .logout:hover {
   text-decoration: underline;
-  color: blueviolet;
-  font-weight: bold;
-  font-size: 20px;
+  background-color: white;
+  width: fit-content;
+  border-radius: 30px;
+  height: fit-content;
+  padding-bottom: 5px;
+}
+.fixedNav ul .logout:hover a {
+  color: rgb(17, 68, 208);
 }
 
 /* ////////// */
@@ -39,11 +49,30 @@
   .fixedNav {
     height: 20vh;
   }
+  .fixedNav .items{
+    display: flex;
+    justify-content: space-between;
+  }
   .fixedNav .App-logo {
     height: 10vh;
   }
   .menu {
     display: block;
     cursor: pointer;
+    font-size: 28px;
+    position: relative;
+    left: 6px;
+    bottom: 10px;
+    border: 1px solid white;
+    width: fit-content;
+    padding: 0 5px;
+    border-radius: 5px;
   }
+  ul {
+    position: relative;
+  }
+  #date {
+    display: none !important;
+  }
+
 }

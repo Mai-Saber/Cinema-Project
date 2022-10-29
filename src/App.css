@@ -38,5 +38,5 @@
 }
 /* ///// */
 .disable {
-  display: none !important;
+  display: inline-block !important;
 }

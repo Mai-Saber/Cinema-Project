@@ -13,7 +13,6 @@ function Form(props) {
       <div className="mainDivForLoginScreen">
         <div className="login-content">
           <h1 className="login-title">Welcome to our Cinema</h1>
-          <p className="note"> (For now write any email and password)</p>
         </div>
         <div className="form-box">
           <form

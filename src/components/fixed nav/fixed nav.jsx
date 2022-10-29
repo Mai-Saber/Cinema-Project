@@ -19,9 +19,9 @@ function FixedNav(props) {
     <>
       <div className="fixedNav">
         <ul>
-          <div className="row">
+          <div className="row items">
             <li className="col-md-6 col-lg-4 col-6  ">
-              <Link to="/home">
+              <Link to="/movies">
                 <img
                   className="App-logo"
                   src="../../../images/simple.jpg"
@@ -29,22 +29,24 @@ function FixedNav(props) {
                 />
               </Link>
             </li>
-            <li className="col-md-6 col-lg-4 col-6 " id="date">
+            <li className="col-md-6 col-lg-4 col-0 " id="date">
               Today : {getTodayDate()}
             </li>
             <li className="col-md-6 col-lg-4 col-6  logout">
-              <span>
-                <i className="ri-logout-box-line"></i>
-              </span>
               <Link
-                className="logout"
+                
                 to="/login"
                 onClick={() => handleLogout()}
               >
+                <span className="logoutIcon">
+                  <i className="ri-logout-box-line"></i>
+                </span>
                 Logout
               </Link>
             </li>
-            <li className=" col-6">
+
+            
+            <li className=" col-12 ">
               <span className="menu" onClick={props.handleSideNav}>
                 <i className="ri-menu-line menu-icon"></i>
               </span>
