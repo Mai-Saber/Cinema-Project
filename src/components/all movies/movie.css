@@ -19,7 +19,7 @@
 .movies .card-div .card {
   background-color: rgba(144, 12, 227, 0.242);
   height: 400px;
-  border-radius: 31px;
+  border-radius: 30px;
 }
 .movies .card-div:hover .card{
 background-color: rgba(182, 177, 213, 0.841);
