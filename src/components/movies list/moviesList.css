@@ -5,6 +5,7 @@
   width: 100%;
   padding-bottom: 100px;
   padding: 10px;
+  background-color: rgba(208, 215, 216, 0.869);
 }
 .moviesList .header {
   padding-left: 20px;
@@ -18,29 +19,30 @@
   background-color: #ffffff;
   border-radius: 5px;
   width: 100%;
+  margin-bottom: 50px;
 }
 .moviesList .table-div table {
   background-color: #ffffff;
   width: 100%;
+  margin-bottom: 20px;
 }
-.moviesList .table-div table td ,
-.moviesList .table-div table th{
+.moviesList .table-div table td,
+.moviesList .table-div table th {
   border: 1px solid #a7a7a7;
   padding: 5px;
   text-align: center;
 }
-thead{
+thead {
   position: sticky;
   top: 0;
- background-color: rgba(214, 209, 209, 0.983);
+  background-color: rgba(214, 209, 209, 0.983);
 }
-
 
 .moviesList .table-div thead tr td {
   color: rgb(172, 166, 166);
   font-weight: bold;
 }
-.moviesList  .icons{
+.moviesList .icons {
   text-align: center;
 }
 #trashIcon {
@@ -90,4 +92,13 @@ thead{
 }
 .add-box .buttons .button-cancel {
   background-color: grey;
+}
+
+@media (min-width: 100px) and (max-width: 1200px) {
+  .moviesList .table-div {
+    margin-right: 10px;
+    overflow: auto !important;
+    height: 80vh;
+    padding-top: 0;
+  }
 }

@@ -1,7 +1,8 @@
 .sideNav {
   width: 15vw;
-  background-color: #252525;
-  font-size: 20px;
+   background: #7f00ff;
+  background: -webkit-linear-gradient(to left, #b712cd, #6f20be);
+  background: linear-gradient(to left, #9d24ad, #7a20d3);font-size: 20px;
   height: 90vh;
   padding-top: 3rem;
   margin-top: -10px;
@@ -21,7 +22,7 @@
 }
 .sideNav ul li a {
   text-decoration: none;
-  color: #9b9b9b;
+  color: rgb(227, 172, 30);
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
@@ -36,7 +37,7 @@
   color: #9b9b9b;
 }
 .sideNav ul li .active {
-  color: #bf920a;
+  color: #1539a2;
   position: relative;
 }
 .sideNav ul li a.active:before {
@@ -44,7 +45,7 @@
   width: 3px;
   height: 100%;
   position: absolute;
-  background-color: #bf920a;
+  background-color: #1539a2;
   left: 0px;
 }
 
@@ -52,6 +53,7 @@
 @media (min-width: 100px) and (max-width: 1200px) {
   .sideNav {
     display: none;
+    width: 30vw !important;
   }
   .sideNav ul li a {
     padding: 0 5px;
